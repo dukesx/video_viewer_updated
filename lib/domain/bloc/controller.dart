@@ -180,7 +180,7 @@ class VideoViewerController extends ChangeNotifier with WidgetsBindingObserver {
     Map<String, VideoSource> sources, {
     bool autoPlay = true,
   }) async {
-    WidgetsBinding.instance.addObserver(this);
+    WidgetsBinding.instance?.addObserver(this);
     final MapEntry<String, VideoSource> entry = sources.entries.first;
     _mounted = true;
     _source = sources;
@@ -195,7 +195,7 @@ class VideoViewerController extends ChangeNotifier with WidgetsBindingObserver {
 
   @override
   Future<void> dispose() async {
-    WidgetsBinding.instance.removeObserver(this);
+    WidgetsBinding.instance?.removeObserver(this);
     _mounted = false;
     _closeOverlayButtons?.cancel();
     _deleteAdTimer();

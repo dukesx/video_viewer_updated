@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:helpers/helpers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
 import 'package:video_viewer/data/repositories/video.dart';
 import 'package:gesture_x_detector/gesture_x_detector.dart';
 import 'package:video_viewer/domain/bloc/controller.dart';

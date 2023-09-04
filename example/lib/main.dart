@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:helpers/helpers.dart';
 import 'package:native_device_orientation/native_device_orientation.dart';
+
 import 'package:video_viewer/video_viewer.dart';
 
 /// SUMMARY
@@ -63,7 +64,7 @@ class SerieSource {
 class CustomVideoViewerStyle extends VideoViewerStyle {
   CustomVideoViewerStyle({required Movie movie, required BuildContext context})
       : super(
-          textStyle: context.textTheme.titleMedium,
+          textStyle: context.textTheme.subtitle1,
           playAndPauseStyle:
               PlayAndPauseWidgetStyle(background: context.color.primary),
           progressBarStyle: ProgressBarStyle(
@@ -74,7 +75,7 @@ class CustomVideoViewerStyle extends VideoViewerStyle {
             padding: kAllPadding,
             child: Headline6(
               movie.title,
-              style: TextStyle(color: context.textTheme.headlineMedium?.color),
+              style: TextStyle(color: context.textTheme.headline4?.color),
             ),
           ),
           thumbnail: Stack(children: [
@@ -188,36 +189,36 @@ class App extends StatelessWidget {
         primaryColor: Color(0xFFd81e27),
         shadowColor: Color(0xFF324754).withOpacity(0.24),
         textTheme: TextTheme(
-          headlineMedium: GoogleFonts.montserrat(
+          headline4: GoogleFonts.montserrat(
             color: Colors.white,
             fontSize: 34,
             fontWeight: FontWeight.bold,
             letterSpacing: 0.4,
           ),
-          headlineSmall: GoogleFonts.montserrat(
+          headline5: GoogleFonts.montserrat(
             color: Color(0xFF324754),
             fontSize: 24,
             fontWeight: FontWeight.w500,
           ),
-          titleLarge: GoogleFonts.montserrat(
+          headline6: GoogleFonts.montserrat(
             color: Color(0xFF324754),
             fontSize: 20,
             fontWeight: FontWeight.w500,
           ),
-          bodyLarge: GoogleFonts.montserrat(
+          bodyText1: GoogleFonts.montserrat(
             color: Color(0xFF324754),
             fontWeight: FontWeight.w500,
             fontSize: 16,
           ),
-          titleMedium: GoogleFonts.montserrat(
+          subtitle1: GoogleFonts.montserrat(
             color: Colors.white,
             fontSize: 12,
           ),
-          titleSmall: GoogleFonts.montserrat(
+          subtitle2: GoogleFonts.montserrat(
             color: Color(0xFF819ab1),
             fontSize: 12,
           ),
-          labelLarge: GoogleFonts.montserrat(
+          button: GoogleFonts.montserrat(
             color: Colors.white,
             letterSpacing: 0.8,
             fontSize: 14,
@@ -325,9 +326,8 @@ class _MovieVideoViewerState extends State<MovieVideoViewer> {
         onFullscreenFixLandscape: false,
         source: {
           widget.movie.title: VideoSource(
-            video: VideoPlayerController.networkUrl(
-              Uri.parse(
-                  "https://felipemurguia.com/assets/videos/mortal_machines_trailer.mp4"),
+            video: VideoPlayerController.network(
+              "https://felipemurguia.com/assets/videos/mortal_machines_trailer.mp4",
             ),
             ads: [
               VideoViewerAd(
@@ -560,7 +560,7 @@ class _SerieChatState extends State<SerieChat> {
         itemBuilder: (_, int index) {
           return Text(
             "x$index ${_texts[index]}",
-            style: context.textTheme.titleMedium,
+            style: context.textTheme.subtitle1,
           );
         },
       ),
@@ -816,7 +816,7 @@ class MovieTitle extends StatelessWidget {
     TextStyle? style;
 
     if (type == MovieStyle.page) {
-      style = TextStyle(color: context.textTheme.bodyLarge?.color);
+      style = TextStyle(color: context.textTheme.bodyText1?.color);
     }
 
     return Hero(
@@ -875,7 +875,7 @@ class SearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextStyle? subtitle2 = context.textTheme.titleSmall;
+    final TextStyle? subtitle2 = context.textTheme.subtitle2;
     return CustomContainer(
       child: Row(children: [
         Padding(
