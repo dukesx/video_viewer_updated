@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:flutter/animation.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:video_viewer/video_viewer.dart';
+import 'package:video_player/video_player.dart';
 
 class VideoSource {
   VideoSource({
@@ -105,7 +105,7 @@ class VideoSource {
     Map<String, VideoSource> videoSource = {};
     for (String key in sources.keys)
       videoSource[key] = VideoSource(
-        video: VideoPlayerController.networkUrl(Uri.parse(sources[key]!)),
+        video: VideoPlayerController.network(sources[key]!),
         intialSubtitle: initialSubtitle,
         subtitle: subtitle,
         range: range,
@@ -213,7 +213,7 @@ class VideoSource {
     Map<String, VideoSource> videoSource = {};
     void addAutoSource() {
       videoSource["Auto"] = VideoSource(
-        video: VideoPlayerController.networkUrl(Uri.parse(m3u8)),
+        video: VideoPlayerController.network(m3u8),
         intialSubtitle: initialSubtitle,
         subtitle: subtitle,
         range: range,
@@ -226,8 +226,7 @@ class VideoSource {
       final String key = formatter?.call(entry.key) ?? entry.key;
       videoSource[key] = VideoSource(
         video: directoryPath == null
-            ? VideoPlayerController.networkUrl(
-                Uri.parse(sourceUrls[entry.key]!))
+            ? VideoPlayerController.network(sourceUrls[entry.key]!)
             : VideoPlayerController.file(sources[entry.key]!),
         intialSubtitle: initialSubtitle,
         subtitle: subtitle,
