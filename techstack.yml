@@ -1,7 +1,8 @@
 repo_name: dukesx/video_viewer_updated
 report_id: 3fa1610b69fb7a1f5092ff9195715240
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-11T14:34:50+00:00'
+timestamp: '2024-01-05T08:50:56+00:00'
 requested_by: dukesx
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1646/Twitter-02.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -26,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/pubspec.yaml
   detection_source: pubspec.yaml
   last_updated_by: "="
   last_updated_on: 2020-11-24 06:32:31.000000000 Z
@@ -37,6 +40,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/3750/pCfEzr6L.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated
   detection_source: Repo Metadata
 - name: Objective-C
   description: The primary programming language you use when writing software for
@@ -47,6 +51,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1008/xcode.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated
   detection_source: Repo Metadata
 - name: Swift
   description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
@@ -57,6 +62,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1009/tuHsaI2U.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated
   detection_source: Repo Metadata
 - name: Android SDK
   description: An SDK that provides you the API libraries and developer tools necessary
@@ -68,7 +74,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1010/m8jf0po4imu8t5eemjdd.png
-  detection_source_url: example/android/app/build.gradle
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/android/app/build.gradle
   detection_source: example/android/app/build.gradle
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -81,7 +87,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Cross-Platform Mobile Development
   image_url: https://img.stackshare.io/service/7180/flutter-mark-square-100.png
-  detection_source: pubspec.yaml
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.yaml
+  detection_source: example/pubspec.yaml
   last_updated_by: "="
   last_updated_on: 2020-11-18 19:58:23.000000000 Z
 - name: Git
@@ -92,6 +99,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated
   detection_source: Repo Metadata
 - name: Gradle
   description: A powerful build system for the JVM
@@ -102,6 +110,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Java Build Tools
   image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/android/app/build.gradle
   detection_source: example/android/app/build.gradle
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -113,6 +122,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/pubspec.yaml
   detection_source: pubspec.yaml
   last_updated_by: "="
   last_updated_on: 2020-11-18 19:58:23.000000000 Z
@@ -125,7 +135,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Operating Systems
   image_url: https://img.stackshare.io/service/9586/ZvmtaSXW_400x400.jpg
-  detection_source_url: example/android/app/build.gradle
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/android/app/build.gradle
   detection_source: example/android/app/build.gradle
   last_updated_by: "="
   last_updated_on: 2020-11-18 19:58:23.000000000 Z
@@ -138,7 +148,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: example/pubspec.yaml
   last_updated_by: Luis Felipe Murguia Ramos
   last_updated_on: 2021-04-03 17:58:20.000000000 Z
@@ -151,8 +161,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
-  detection_source: pubspec.yaml
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
+  detection_source: example/pubspec.yaml
   last_updated_by: "="
   last_updated_on: 2020-11-18 19:58:23.000000000 Z
 - name: google_fonts
@@ -164,7 +174,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: example/pubspec.yaml
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -177,7 +187,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: pubspec.yaml
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -190,7 +200,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: example/pubspec.yaml
   last_updated_by: Luis Felipe Murguia Ramos
   last_updated_on: 2021-08-16 04:51:58.000000000 Z
@@ -204,7 +214,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: pubspec.yaml
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -218,7 +228,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: pubspec.yaml
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -232,7 +242,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: pubspec.yaml
   last_updated_by: Jatin
   last_updated_on: 2023-09-04 07:49:11.000000000 Z
@@ -245,7 +255,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/package/pub/image.png
-  detection_source_url: example/pubspec.lock
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/pubspec.lock
   detection_source: pubspec.yaml
   last_updated_by: dukesx
   last_updated_on: 2023-03-02 06:53:48.000000000 Z
@@ -257,6 +267,7 @@ tools:
   category: Libraries
   sub_category: Maven Packages
   image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/dukesx/video_viewer_updated/blob/master/example/android/app/build.gradle
   detection_source: example/android/app/build.gradle
   last_updated_by: "="
   last_updated_on: 2020-11-18 19:58:23.000000000 Z
