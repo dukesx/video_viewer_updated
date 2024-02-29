@@ -2,7 +2,7 @@ repo_name: dukesx/video_viewer_updated
 report_id: 3fa1610b69fb7a1f5092ff9195715240
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:50:56+00:00'
+timestamp: '2024-02-29T18:38:33+00:00'
 requested_by: dukesx
 provider: github
 branch: master
@@ -54,7 +54,7 @@ tools:
   detection_source_url: https://github.com/dukesx/video_viewer_updated
   detection_source: Repo Metadata
 - name: Swift
-  description: 'An innovative new programming language for Cocoa and Cocoa Touch. '
+  description: An innovative new programming language for Cocoa and Cocoa Touch.
   website_url: https://developer.apple.com/swift/
   license: Apache-2.0
   open_source: true
